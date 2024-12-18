@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Seminar / Workshop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            width: 400px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        .gender-container label {
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: normal;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3700ff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Registrasi Seminar / Workshop</legend>
+            
+            <!-- Nama Lengkap -->
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+            
+            <!-- Tempat Lahir -->
+            <label for="tempatLahir">Tempat Lahir</label>
+            <input type="text" id="tempatLahir" name="tempatLahir" placeholder="Masukkan tempat lahir">
+            
+            <!-- Tanggal Lahir -->
+            <label for="tanggalLahir">Tanggal Lahir</label>
+            <input type="date" id="tanggalLahir" name="tanggalLahir" value="2016-05-12">
+            
+            <!-- Gender -->
+            <label>Gender</label>
+            <div class="gender-container">
+                <input type="radio" id="lakiLaki" name="gender" value="Laki-Laki" checked>
+                <label for="lakiLaki">Laki-Laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+            </div>
+            
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email Anda">
+            
+            <!-- Status Peserta -->
+            <label for="statusPeserta">Status Peserta</label>
+            <select id="statusPeserta" name="statusPeserta">
+                <option value="" selected>Select</option>
+                <option value="Peserta">Peserta</option>
+                <option value="Pembicara">Pembicara</option>
+                <option value="Panitia">Panitia</option>
+            </select>
+            
+            <!-- Tombol Daftar -->
+            <button type="submit">Daftar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

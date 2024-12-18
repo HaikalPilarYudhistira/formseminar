@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Seminar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 0;
+        }
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        button {
+            width: 100px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Create New Seminar</legend>
+            
+            <!-- Kode -->
+            <label for="kode">Kode</label>
+            <input type="text" id="kode" name="kode">
+            
+            <!-- Nama Kegiatan -->
+            <label for="namaKegiatan">Nama Kegiatan</label>
+            <input type="text" id="namaKegiatan" name="namaKegiatan">
+            
+            <!-- Tanggal Mulai -->
+            <label for="tanggalMulai">Tanggal Mulai</label>
+            <input type="date" id="tanggalMulai" name="tanggalMulai" value="2016-05-12">
+            
+            <!-- Tanggal Akhir -->
+            <label for="tanggalAkhir">Tanggal Akhir</label>
+            <input type="date" id="tanggalAkhir" name="tanggalAkhir" value="2016-05-12">
+            
+            <!-- Biaya -->
+            <label for="biaya">Biaya</label>
+            <input type="number" id="biaya" name="biaya" placeholder="Masukkan nominal biaya">
+            
+            <!-- Tempat -->
+            <label for="tempat">Tempat</label>
+            <input type="text" id="tempat" name="tempat" placeholder="Lokasi kegiatan">
+            
+            <!-- Latitude -->
+            <label for="latitude">Latitude</label>
+            <input type="text" id="latitude" name="latitude" placeholder="Koordinat latitude">
+            
+            <!-- Longitude -->
+            <label for="longitude">Longitude</label>
+            <input type="text" id="longitude" name="longitude" placeholder="Koordinat longitude">
+            
+            <!-- Jenis Kegiatan -->
+            <label for="jenisKegiatan">Jenis Kegiatan</label>
+            <select id="jenisKegiatan" name="jenisKegiatan">
+                <option value="" selected>Pilih</option>
+                <option value="Seminar">Seminar</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Webinar">Webinar</option>
+            </select>
+            
+            <!-- PIC -->
+            <label for="pic">PIC</label>
+            <input type="text" id="pic" name="pic" placeholder="Penanggung Jawab">
+            
+            <!-- Deskripsi -->
+            <label for="deskripsi">Deskripsi</label>
+            <textarea id="deskripsi" name="deskripsi" placeholder="Tuliskan deskripsi kegiatan di sini..."></textarea>
+            
+            <!-- Tombol Simpan -->
+            <button type="submit">Simpan</button>
+        </fieldset>
+    </form>
+</body>
+</html>
